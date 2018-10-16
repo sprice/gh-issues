@@ -43,7 +43,7 @@ npm run start
 
 ```
 cd gh-issues
-npm teset
+npm test
 ```
 
 ## LICENSE
