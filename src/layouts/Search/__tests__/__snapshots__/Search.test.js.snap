@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop of Search 1`] = `
+<div
+  className="search-page"
+>
+  <h1>
+    GitHub Issue Viewer
+  </h1>
+  <label
+    className="search-label"
+    htmlFor="search"
+  >
+    <input
+      className="search-box"
+      id="search"
+      onChange={[Function]}
+      placeholder="Type a link to a GitHub repo!"
+      type="text"
+      value=""
+    />
+  </label>
+  <button
+    onClick={[Function]}
+  >
+    View Issues
+  </button>
+</div>
+`;

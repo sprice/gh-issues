@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop of ViewerHeader 1`] = `
+<header>
+  <h2>
+    Github Issue Viewer
+  </h2>
+  <h4
+    className="regular"
+  >
+    https://github.com/ethereum/solidity
+  </h4>
+</header>
+`;

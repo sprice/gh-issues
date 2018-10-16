@@ -1,0 +1,66 @@
+{
+  "name": "github-issues",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "format": "prettier --write --no-semi \"src/**/*.{js,json} \" ",
+    "format:check": "prettier --list-different --no-semi \"src/**/*.{js,json} \" ",
+    "lint": "eslint \"src/**/*.js\"",
+    "test": "jest --silent",
+    "test:update": "jest --silent -u",
+    "dev": "parcel src/index.html",
+    "clean": "rm -r dist && rm -r .cache",
+    "build": "parcel build --public-url /dist/ src/index.html",
+    "start": "babel-node server",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sprice/github-issues.git"
+  },
+  "author": "Shawn Price",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/sprice/github-issues/issues"
+  },
+  "homepage": "https://github.com/sprice/github-issues",
+  "engines": {
+    "node": "^10.2.1",
+    "npm": "^5.6.0"
+  },
+  "dependencies": {
+    "@reach/router": "1.2.1",
+    "axios": "0.18.0",
+    "babel-cli": "6.26.0",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "classnames": "2.2.6",
+    "express": "4.16.3",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "react-pose": "3.3.4",
+    "sass": "1.14.0",
+    "typeface-montserrat": "0.0.54"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-eslint": "10.0.0",
+    "eslint": "5.6.0",
+    "eslint-config-prettier": "3.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-prettier": "2.7.0",
+    "eslint-plugin-react": "7.11.1",
+    "husky": "1.0.0",
+    "jest": "23.6.0",
+    "parcel-bundler": "1.10.0",
+    "prettier": "1.14.3",
+    "react-test-renderer": "16.5.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format:check && npm run test"
+    }
+  }
+}

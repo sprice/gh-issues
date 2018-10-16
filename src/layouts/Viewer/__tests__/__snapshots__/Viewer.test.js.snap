@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop of Viewer 1`] = `
+<div
+  className="viewer-page"
+>
+  <header>
+    <h2>
+      Github Issue Viewer
+    </h2>
+    <h4
+      className="regular"
+    >
+      
+    </h4>
+  </header>
+  <div
+    className="issue-filter"
+  >
+    <div
+      className="filters"
+    >
+      <a
+        className=""
+        href="/viewer/ethereum/solidity/all"
+        onClick={[Function]}
+      >
+        All Issues
+      </a>
+      <a
+        className=""
+        href="/viewer/ethereum/solidity/open"
+        onClick={[Function]}
+      >
+        Open Issues
+      </a>
+      <a
+        className=""
+        href="/viewer/ethereum/solidity/closed"
+        onClick={[Function]}
+      >
+        Closed Issues
+      </a>
+      <a
+        className=""
+        href="/viewer/ethereum/solidity/pull_request"
+        onClick={[Function]}
+      >
+        Pull Requests
+      </a>
+    </div>
+    <div
+      className="close-viewer"
+    >
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="icon close"
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="cards"
+  />
+</div>
+`;

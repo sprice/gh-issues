@@ -1,0 +1,97 @@
+.search-page {
+  background-color: $pink;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-page h1 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.search-box {
+  padding: 0.75rem 0.75rem 0.75rem 2rem;
+  width: 12rem;
+  font-size: 1rem;
+}
+
+.search-box::placeholder {
+  color: $light-grey;
+  font-size: 1rem;
+}
+
+.search-label {
+  position: relative;
+}
+
+.search-label:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  bottom: 0;
+  width: 20px;
+
+  background-color: $light-grey;
+  mask-image: url("../icons/search.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url("../icons/search.svg");
+  -webkit-mask-repeat: no-repeat;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: $white;
+  border: none;
+  border-radius: 10px;
+  color: $pink;
+  font-weight: 700;
+  font-size: 1.75rem;
+  box-shadow: 3px 3px 10px 0px rgba($light-grey, 0.75);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 3px 2px 10px 0px rgba($light-grey, 0.75);
+}
+
+.error {
+  margin-top: 3rem;
+}
+
+@media (min-width: $breakpoint-small) {
+  .search-page h1 {
+    font-size: 3rem;
+  }
+
+  .search-box {
+    width: 30rem;
+    padding: 0.75rem 0.75rem 0.75rem 3rem;
+  }
+
+  .search-box::placeholder {
+    position: relative;
+    font-size: 1.75rem;
+    top: 5px; /* Chrome is weird */
+  }
+
+  .search-label:before {
+    left: 10px;
+    top: 10px;
+    width: 30px;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .search-box {
+    width: 40rem;
+  }
+}

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop of Card 1`] = `
+<div
+  className="card"
+>
+  <div>
+    <i
+      className="icon closed"
+    />
+    <i
+      className="icon pull-request"
+    />
+  </div>
+  <div
+    className="card-title"
+  >
+    <h4
+      className="regular"
+    >
+      Issue Title
+    </h4>
+  </div>
+  <div
+    className="card-body"
+  >
+    <p>
+      Issue Body
+    </p>
+  </div>
+  <small
+    className="card-label light"
+  >
+    • 
+    awesome
+  </small>
+  <small
+    className="card-label light"
+  >
+    • 
+    sauce
+  </small>
+</div>
+`;

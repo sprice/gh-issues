@@ -1,0 +1,41 @@
+header {
+  height: 9rem;
+  background-color: $pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 3px 5px 1px rgba($pink, 0.55);
+}
+
+header h2 {
+  color: $white;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+header h4 {
+  color: $dark-grey;
+  word-break: break-all;
+}
+
+@media (min-width: $breakpoint-small) {
+  header h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 4rem;
+  }
+
+  header h2 {
+    margin-bottom: 0;
+  }
+}

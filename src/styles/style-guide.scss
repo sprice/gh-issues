@@ -1,0 +1,77 @@
+@mixin margin-reset {
+  margin: {
+    block-start: 0;
+    block-end: 0;
+    inline-start: 0;
+    inline-end: 0;
+  }
+}
+
+html,
+body {
+  font: {
+    family: "Montserrat", sans-serif;
+    size: 16px;
+  }
+}
+
+h1 {
+  font: {
+    size: 3rem; // 48px
+  }
+  @include margin-reset;
+  color: $white;
+}
+
+h2 {
+  font: {
+    size: 1.75rem; // 28px
+  }
+  @include margin-reset;
+}
+
+h3 {
+  font: {
+    size: 1.5rem; // 24px
+  }
+  @include margin-reset;
+}
+
+h4 {
+  font: {
+    size: 1.125rem; // 18px
+  }
+  @include margin-reset;
+}
+
+p {
+  font: {
+    size: 0.75rem; // 12px
+  }
+  @include margin-reset;
+}
+
+small {
+  font: {
+    size: 0.5625rem; // 9px
+  }
+  @include margin-reset;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.regular {
+  font-weight: 400 !important;
+}
+
+.light {
+  font-weight: 300 !important;
+}
+
+i.icon {
+  float: right;
+  margin-top: 5px;
+  margin-right: 5px;
+}

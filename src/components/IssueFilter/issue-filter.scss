@@ -1,0 +1,48 @@
+.issue-filter {
+  max-width: $breakpoint-x-large;
+  margin: 2rem auto 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.filters a {
+  border: 0;
+  background-color: $white;
+  margin-right: 0.5rem;
+  color: $dark-grey;
+  text-decoration: none;
+}
+
+.filters a:hover {
+  color: $grey;
+}
+
+.filters a.active {
+  color: $pink;
+}
+
+i.close::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+
+  background-color: $dark-grey;
+  mask-image: url("../icons/close.svg");
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url("../icons/close.svg");
+  -webkit-mask-repeat: no-repeat;
+}
+
+@media (min-width: $breakpoint-small) {
+  .filters {
+    flex-direction: row;
+  }
+}

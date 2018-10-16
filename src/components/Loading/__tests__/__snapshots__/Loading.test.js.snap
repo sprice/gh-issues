@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshop of Loading 1`] = `
+<div
+  className="loading"
+>
+  <header>
+    <h2>
+      Github Issue Viewer
+    </h2>
+    <h4
+      className="regular"
+    >
+      https://github.com/ethereum/soldity
+    </h4>
+  </header>
+  <div
+    className="spinner"
+  >
+    <div
+      className="spin"
+    />
+  </div>
+</div>
+`;
